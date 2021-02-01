@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Movie App</title>
+    <link rel="stylesheet" href="assets/css/movie.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SIMPLE MOVIE APP</h1> 
+
+        <form id="movie-form">
+            <label>Title</label>
+            <input type="text" class="input" id="title" placeholder="Enter title">
+            <span class="error titleError"></span>
+            <label>Description</label>
+            <input type="text" class="input" id="description" placeholder="Enter discription">
+            <span class="error descriptionError"></span>
+            <label>Release Year</label>
+            <input type="text" class="input" id="releaseYear" placeholder="Enter release year">
+            <span class="error releaseYearError"></span>
+            <label>Genre</label>
+            <input type="text" class="input" id="genre" placeholder="Enter genre">
+            <span class="error genreError"></span>
+            <button type="submit" id="btn-save">Save</button>
+        </form>
+
+        <table class="moviesTable">
+            <thead>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Release Year</td>
+                <th>Genre</th>
+                <th>Action</th>
+            </thead>
+            <tbody class="movieList">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="assets/js/application.js"></script>
+</body>
+</html>
